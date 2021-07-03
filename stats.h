@@ -9,32 +9,107 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file Stats
+ * @brief performs statistical analytics on a dataset
  *
- * <Add Extended Description Here>
+ * Statistical analytics include maximum, minimum,mean and median.  
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Alexander Toy
+/* @date 07/03/2021
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
-
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief prints the statistics of an array
  *
- * <Add Extended Description Here>
+ * given an array of unsigned char data items prints the minimum, maximum, mean, and median to stdout
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param unsigned char *array
  *
- * @return <Add Return Informaiton here>
+ * @return none
  */
 
+void print_statistics(unsigned char *array);
+
+/**
+ * @brief pretty prints an array
+ *
+ * given an array of unsigned char data items and an int length, prints the array to stdout
+ *
+ * @param unsigned char *array
+ * @param unsigned int
+ *
+ * @return none
+ */
+
+void print_array(unsigned char *array, unsigned int length);
+
+
+/**
+ * @brief find the median of an array of data
+ *
+ * given an array of unsigned char data items and an int length, calculates the median
+ *
+ * @param unsigned char *array
+ * @param unsigned int
+ *
+ * @return median value unsigned char
+ */
+
+unsigned char find_median(unsigned char *array, unsigned int length);
+
+/**
+ * @brief find the mean of an array of data
+ *
+ * given an array of unsigned char data items and an int length, calculates the mean
+ *
+ * @param unsigned char *array
+ * @param unsigned int
+ *
+ * @return mean value unsigned char
+ */
+
+unsigned char find_mean(unsigned char *array, unsigned int length);
+
+/**
+ * @brief find the maximum value of an array of data
+ *
+ * given an array of unsigned char data items and an int length, returns the maximum value
+ *
+ * @param unsigned char *array
+ * @param unsigned int
+ *
+ * @return maximum value unsigned char
+ */
+
+unsigned char find_maximum(unsigned char *array, unsigned int length);
+
+/**
+ * @brief find the minimum value of an array of data
+ *
+ * given an array of unsigned char data items and an int length, returns the minimum value
+ *
+ * @param unsigned char *array
+ * @param unsigned int
+ *
+ * @return minimum value unsigned char
+ */
+
+unsigned char find_minimum(unsigned char *array, unsigned int length);
+
+/**
+ * @brief sorts an array of data
+ *
+ * given an array of unsigned char data items and an int length, sorts from largest to smallest
+ *
+ * @param unsigned char *array
+ * @param unsigned int
+ *
+ * @return return sorted array unsigned char *array
+ */
+
+unsigned char sort_array(unsigned char *array, unsigned int length);
 
 #endif /* __STATS_H__ */
