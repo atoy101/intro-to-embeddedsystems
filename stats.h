@@ -24,14 +24,14 @@
 /**
  * @brief prints the statistics of an array
  *
- * given an array of unsigned char data items prints the minimum, maximum, mean, and median to stdout
+ * given an array of unsigned char data items and unsigned int length prints the minimum, maximum, mean, and median to stdout
  *
  * @param unsigned char *array
  *
  * @return none
  */
 
-void print_statistics(unsigned char *array);
+void print_statistics(unsigned char array[], unsigned int length);
 
 /**
  * @brief pretty prints an array
@@ -44,7 +44,7 @@ void print_statistics(unsigned char *array);
  * @return none
  */
 
-void print_array(unsigned char *array, unsigned int length);
+void print_array(unsigned char array[], unsigned int length);
 
 
 /**
@@ -58,7 +58,7 @@ void print_array(unsigned char *array, unsigned int length);
  * @return median value unsigned char
  */
 
-unsigned char find_median(unsigned char *array, unsigned int length);
+unsigned char find_median(unsigned char array[], unsigned int length);
 
 /**
  * @brief find the mean of an array of data
@@ -71,7 +71,7 @@ unsigned char find_median(unsigned char *array, unsigned int length);
  * @return mean value unsigned char
  */
 
-unsigned char find_mean(unsigned char *array, unsigned int length);
+unsigned char find_mean(unsigned char array[], unsigned int length);
 
 /**
  * @brief find the maximum value of an array of data
@@ -84,7 +84,7 @@ unsigned char find_mean(unsigned char *array, unsigned int length);
  * @return maximum value unsigned char
  */
 
-unsigned char find_maximum(unsigned char *array, unsigned int length);
+unsigned char find_maximum(unsigned char array[], unsigned int length);
 
 /**
  * @brief find the minimum value of an array of data
@@ -97,7 +97,7 @@ unsigned char find_maximum(unsigned char *array, unsigned int length);
  * @return minimum value unsigned char
  */
 
-unsigned char find_minimum(unsigned char *array, unsigned int length);
+unsigned char find_minimum(unsigned char array[], unsigned int length);
 
 /**
  * @brief sorts an array of data
@@ -110,6 +110,6 @@ unsigned char find_minimum(unsigned char *array, unsigned int length);
  * @return return sorted array unsigned char *array
  */
 
-unsigned char sort_array(unsigned char *array, unsigned int length);
+void sort_array(unsigned char *array, unsigned int length);
 
 #endif /* __STATS_H__ */
