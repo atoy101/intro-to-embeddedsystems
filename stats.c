@@ -9,13 +9,14 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file Stats 
+ * @brief Coursera Intro to Embedded systems week1 assignment 1
  *
- * <Add Extended Description Here>
+ * Functions to find the median, mean, min, max, of an array. And sort
+ * the array.  Also functions to print the array and statistics.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Alexander Toy
+ * @date 07/03/2021
  *
  */
 
