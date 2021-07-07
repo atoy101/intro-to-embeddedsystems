@@ -4,7 +4,7 @@ Introduction to Embedded Systems Software and Development Environments
 
 Author: Alexander Toy
 
-Coursera: Introduction to Embedded Systems Software Week1 Assignment
+Coursera: Introduction to Embedded Systems Software & Embedded Software and Hardware Architecture
 
 #######################
 
