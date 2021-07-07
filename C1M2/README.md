@@ -8,4 +8,4 @@ Coursera: Introduction to Embedded Systems Software Week1 Assignment
 
 #######################
 
-This project is a simple application that can perform statistical analytics on a dataset.
+This project is a makefile for host linux machine and MSP432
