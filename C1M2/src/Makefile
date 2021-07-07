@@ -79,6 +79,9 @@ CPPFLAGs = -E
 %.asm : %.o
 	$(OBJDUMP) $< -S > $@
 	
+%.asm : %.out
+	$(OBJDUMP) $< -S > $@
+
 %.o : %.c
 	$(CC) -c $< $(CFLAGS) -o $@
 	
