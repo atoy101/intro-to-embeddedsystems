@@ -110,7 +110,7 @@ void sort_array(unsigned char *array, unsigned int length){
     num_swaps=0;
     for (int i=0; i<length-1; i++){
       unsigned char temp = *(array+1);
-      if (*array > temp){
+      if (*array < temp){
         *(array+1) = *array;
         *array = temp;
         array++;
