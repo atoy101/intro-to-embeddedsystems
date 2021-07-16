@@ -20,10 +20,11 @@
  * @date April 1 2017
  *
  */
-#include <stdlib.h>
-#include <stdio.h>
 #include <stdint.h>
+#include <stddef.h>
 #include "memory.h"
+#include <stdio.h>
+
 
 /***********************************************************
  Function Definitions
@@ -58,6 +59,8 @@ uint8_t * my_memmove(uint8_t * src, uint8_t * dst, size_t length){
     *dst = *src;
     src++;
     dst++;
+    printf("src:%p\n",src);
+    printf("dst:%p\n",dst);
   }
   return (src-length);
 }
@@ -110,4 +113,3 @@ int32_t * reserve_words(size_t length){
 void free_words(int32_t * src){
   free(src);
 }
-

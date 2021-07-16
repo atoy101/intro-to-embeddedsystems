@@ -10,18 +10,24 @@
 #*****************************************************************************
 
 # Add your Source files to this variable
-SOURCES_MSP = interrupts_msp432p401r_gcc.c \
-	startup_msp432p401r_gcc.c\
-	system_msp432p401r.c\
-	main.c\
-	memory.c
+SOURCES_MSP = ./src/interrupts_msp432p401r_gcc.c \
+	./src/startup_msp432p401r_gcc.c\
+	./src/system_msp432p401r.c\
+	./src/main.c\
+	./src/memory.c\
+	./src/course1.c\
+	./src/data.c\
+	./src/stats.c\
 	
-SOURCES = 	main.c\
-	memory.c
+SOURCES = 	./src/main.c\
+	./src/memory.c\
+	./src/course1.c\
+	./src/data.c\
+	./src/stats.c\
 
 # Add your include paths to this variable
-INCLUDES_MSP = -I "../include/common" \
-	-I "../include/CMSIS" \
-	-I "../include/msp432"
+INCLUDES_MSP = -I "./include/common" \
+	-I "./include/CMSIS" \
+	-I "./include/msp432"
 
-INCLUDES = -I "../include/common"
+INCLUDES = -I "./include/common"

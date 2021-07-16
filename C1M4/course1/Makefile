@@ -41,8 +41,7 @@ SPECS = nosys.specs
 MFPU = fpv4-sp-d16
 FLOAT = hard
 MARCH = armv7e-m
-TARGET = c1m2
-
+TARGET = main
 
 # Compiler Flags and Defines
 ifeq ($(PLATFORM),MSP432)
@@ -65,7 +64,7 @@ else
 	CC = gcc
 	LD = ld
 	OBJDUMP = objdump
-	CFLAGS = -Wall -Werror -g -O0 $(INCLUDES) -std=c99 -DHOST
+	CFLAGS = -Wall -g -O0 $(INCLUDES) -std=c99 -DHOST -DVERBOSE -DCOURSE1 
 	CPPFLAGS = -E $(INCLUDES) -DHOST$(CC) $(OBJS) $(CFLAGS) -o $@
 	SIZE = size
 endif

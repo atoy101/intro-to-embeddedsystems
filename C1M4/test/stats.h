@@ -15,12 +15,12 @@
  * Statistical analytics include maximum, minimum,mean and median.  
  *
  * @author Alexander Toy
-* @date 07/03/2021
+/* @date 07/03/2021
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
-#include "platform.h"
+
 /**
  * @brief prints the statistics of an array
  *
@@ -111,5 +111,8 @@ unsigned char find_minimum(unsigned char array[], unsigned int length);
  */
 
 void sort_array(unsigned char *array, unsigned int length);
+
+uint8_t my_itoa(int32_t data, uint8_t * ptr, uint32_t base);
+int32_t my_atoi(uint8_t * ptr, uint8_t digits, uint32_t base);
 
 #endif /* __STATS_H__ */
